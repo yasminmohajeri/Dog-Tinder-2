@@ -12,9 +12,12 @@
 		59F04B0921B67FF000E0C5E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F04B0721B67FF000E0C5E4 /* Main.storyboard */; };
 		59F04B0B21B67FF100E0C5E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F04B0A21B67FF100E0C5E4 /* Assets.xcassets */; };
 		59F04B0E21B67FF100E0C5E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F04B0C21B67FF100E0C5E4 /* LaunchScreen.storyboard */; };
+		8AB20DF021BE9FB000F88D12 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AB20DEF21BE9FB000F88D12 /* GoogleService-Info.plist */; };
+		8D674F49DFA5C12EBDED8FA3 /* Pods_Dog_Tinder_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779933BE5C7BB0EB73817634 /* Pods_Dog_Tinder_2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53BA8D036D6FD9698BB43604 /* Pods-Dog Tinder 2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dog Tinder 2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dog Tinder 2/Pods-Dog Tinder 2.release.xcconfig"; sourceTree = "<group>"; };
 		59F04B0021B67FF000E0C5E4 /* Dog Tinder 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dog Tinder 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F04B0321B67FF000E0C5E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59F04B0521B67FF000E0C5E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		59F04B0A21B67FF100E0C5E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59F04B0D21B67FF100E0C5E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59F04B0F21B67FF100E0C5E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70C210DCB264DA25321E7870 /* Pods-Dog Tinder 2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dog Tinder 2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dog Tinder 2/Pods-Dog Tinder 2.debug.xcconfig"; sourceTree = "<group>"; };
+		779933BE5C7BB0EB73817634 /* Pods_Dog_Tinder_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dog_Tinder_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AB20DEF21BE9FB000F88D12 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D674F49DFA5C12EBDED8FA3 /* Pods_Dog_Tinder_2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		477A5C8AFB3F502DA054F033 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				779933BE5C7BB0EB73817634 /* Pods_Dog_Tinder_2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		59F04AF721B67FF000E0C5E4 = {
 			isa = PBXGroup;
 			children = (
 				59F04B0221B67FF000E0C5E4 /* Dog Tinder 2 */,
 				59F04B0121B67FF000E0C5E4 /* Products */,
+				812344932542162BFB95A57F /* Pods */,
+				477A5C8AFB3F502DA054F033 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,18 @@
 				59F04B0A21B67FF100E0C5E4 /* Assets.xcassets */,
 				59F04B0C21B67FF100E0C5E4 /* LaunchScreen.storyboard */,
 				59F04B0F21B67FF100E0C5E4 /* Info.plist */,
+				8AB20DEF21BE9FB000F88D12 /* GoogleService-Info.plist */,
 			);
 			path = "Dog Tinder 2";
+			sourceTree = "<group>";
+		};
+		812344932542162BFB95A57F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70C210DCB264DA25321E7870 /* Pods-Dog Tinder 2.debug.xcconfig */,
+				53BA8D036D6FD9698BB43604 /* Pods-Dog Tinder 2.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59F04B1221B67FF100E0C5E4 /* Build configuration list for PBXNativeTarget "Dog Tinder 2" */;
 			buildPhases = (
+				6200B0E57AFC4985AAF729C8 /* [CP] Check Pods Manifest.lock */,
 				59F04AFC21B67FF000E0C5E4 /* Sources */,
 				59F04AFD21B67FF000E0C5E4 /* Frameworks */,
 				59F04AFE21B67FF000E0C5E4 /* Resources */,
+				87FBB7CD6D52042CD47FAADA /* [CP] Embed Pods Frameworks */,
+				701B740813076EB9362E4640 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,12 +153,96 @@
 			buildActionMask = 2147483647;
 			files = (
 				59F04B0E21B67FF100E0C5E4 /* LaunchScreen.storyboard in Resources */,
+				8AB20DF021BE9FB000F88D12 /* GoogleService-Info.plist in Resources */,
 				59F04B0B21B67FF100E0C5E4 /* Assets.xcassets in Resources */,
 				59F04B0921B67FF000E0C5E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6200B0E57AFC4985AAF729C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dog Tinder 2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		701B740813076EB9362E4640 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Dog Tinder 2/Pods-Dog Tinder 2-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/gRPCCertificates-Firestore.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates-Firestore.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dog Tinder 2/Pods-Dog Tinder 2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87FBB7CD6D52042CD47FAADA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Dog Tinder 2/Pods-Dog Tinder 2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dog Tinder 2/Pods-Dog Tinder 2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		59F04AFC21B67FF000E0C5E4 /* Sources */ = {
@@ -280,6 +394,7 @@
 		};
 		59F04B1321B67FF100E0C5E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70C210DCB264DA25321E7870 /* Pods-Dog Tinder 2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +412,7 @@
 		};
 		59F04B1421B67FF100E0C5E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53BA8D036D6FD9698BB43604 /* Pods-Dog Tinder 2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
