@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:StorageRef.swift">
+   </FileRef>
+   <FileRef
       location = "group:Dog Tinder 2.xcodeproj">
    </FileRef>
    <FileRef
