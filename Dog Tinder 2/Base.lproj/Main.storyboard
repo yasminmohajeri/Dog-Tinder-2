@@ -392,9 +392,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Use-Hg-A5g">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Use-Hg-A5g">
                                 <rect key="frame" x="16" y="563" width="130" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Go back to profiles">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -402,9 +401,8 @@
                                     <segue destination="R88-92-ijW" kind="show" id="HFc-gc-5f6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wb-5g-9I5">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wb-5g-9I5">
                                 <rect key="frame" x="16" y="591" width="154" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Go back to own profile">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -412,15 +410,46 @@
                                     <segue destination="UR0-0n-dps" kind="show" id="3yy-49-US8"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Say hi! " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xWG-tg-AKG">
-                                <rect key="frame" x="16" y="281" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog1" translatesAutoresizingMaskIntoConstraints="NO" id="gCU-ki-kNO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="297"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6l0-aD-zcf">
+                                <rect key="frame" x="16" y="430" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Saved chats" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8iK-CT-Dse">
+                                <rect key="frame" x="16" y="326" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="a4K-3Y-psO"/>
+                                </constraints>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D50-ii-aDG">
+                                <rect key="frame" x="16" y="445" width="305" height="93"/>
+                                <state key="normal" title="say hi!"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gCU-ki-kNO" firstAttribute="top" secondItem="uTY-kQ-XWw" secondAttribute="top" id="484-6q-nPm"/>
+                            <constraint firstItem="8iK-CT-Dse" firstAttribute="leading" secondItem="uTY-kQ-XWw" secondAttribute="leadingMargin" id="AVK-4u-0Ds"/>
+                            <constraint firstItem="8iK-CT-Dse" firstAttribute="top" secondItem="gCU-ki-kNO" secondAttribute="bottom" constant="29" id="FVg-f6-6qq"/>
+                            <constraint firstItem="8iK-CT-Dse" firstAttribute="leading" secondItem="7wb-5g-9I5" secondAttribute="leading" id="Nyb-wh-kmL"/>
+                            <constraint firstItem="vpk-cU-Syg" firstAttribute="trailing" secondItem="8iK-CT-Dse" secondAttribute="trailing" constant="119" id="PBZ-iS-zfx"/>
+                            <constraint firstItem="8iK-CT-Dse" firstAttribute="leading" secondItem="D50-ii-aDG" secondAttribute="leading" id="Yc5-dT-N8V"/>
+                            <constraint firstItem="8iK-CT-Dse" firstAttribute="top" secondItem="uTY-kQ-XWw" secondAttribute="top" constant="326" id="cc1-7V-uvV"/>
+                            <constraint firstItem="8iK-CT-Dse" firstAttribute="leading" secondItem="Use-Hg-A5g" secondAttribute="leading" id="deU-Ci-2qz"/>
+                            <constraint firstItem="gCU-ki-kNO" firstAttribute="leading" secondItem="uTY-kQ-XWw" secondAttribute="leading" id="gcd-c2-1Xl"/>
+                            <constraint firstAttribute="trailing" secondItem="gCU-ki-kNO" secondAttribute="trailing" id="mBh-J1-0ba"/>
+                            <constraint firstItem="8iK-CT-Dse" firstAttribute="leading" secondItem="6l0-aD-zcf" secondAttribute="leading" id="pwe-Kg-vmI"/>
+                            <constraint firstItem="D50-ii-aDG" firstAttribute="top" secondItem="8iK-CT-Dse" secondAttribute="bottom" constant="20" id="tC9-rW-Nzk"/>
+                            <constraint firstItem="vpk-cU-Syg" firstAttribute="trailing" secondItem="D50-ii-aDG" secondAttribute="trailing" constant="26" id="zcQ-Qm-R0s"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vpk-cU-Syg"/>
                     </view>
                 </viewController>
@@ -435,7 +464,7 @@
         <image name="dog2" width="624" height="534"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yle-CG-caK"/>
+        <segue reference="7dl-Nh-uIU"/>
         <segue reference="HFc-gc-5f6"/>
         <segue reference="3yy-49-US8"/>
     </inferredMetricsTieBreakers>
