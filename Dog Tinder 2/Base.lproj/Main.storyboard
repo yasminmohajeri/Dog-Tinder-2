@@ -238,6 +238,64 @@
             </objects>
             <point key="canvasLocation" x="1660" y="653.52323838080963"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Od0-5S-yRo">
+            <objects>
+                <viewController id="VGP-3D-unG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jVQ-0z-5Ax">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog2" translatesAutoresizingMaskIntoConstraints="NO" id="rVe-fR-ZMK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="411"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Martin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeQ-eF-9Fy">
+                                <rect key="frame" x="44" y="445" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labrador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHQ-Jo-kr9">
+                                <rect key="frame" x="44" y="482" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntP-DH-mw2">
+                                <rect key="frame" x="44" y="518" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31T-7W-pZy">
+                                <rect key="frame" x="44" y="558" width="29" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="31T-7W-pZy" firstAttribute="leading" secondItem="ntP-DH-mw2" secondAttribute="leading" id="0Ww-i9-tcX"/>
+                            <constraint firstItem="rVe-fR-ZMK" firstAttribute="leading" secondItem="jVQ-0z-5Ax" secondAttribute="leading" id="36P-mm-zFU"/>
+                            <constraint firstItem="rVe-fR-ZMK" firstAttribute="top" secondItem="jVQ-0z-5Ax" secondAttribute="top" id="8Hc-bC-Ucf"/>
+                            <constraint firstItem="31T-7W-pZy" firstAttribute="top" secondItem="ntP-DH-mw2" secondAttribute="bottom" constant="19" id="9SG-4k-o16"/>
+                            <constraint firstItem="31T-7W-pZy" firstAttribute="leading" secondItem="EHQ-Jo-kr9" secondAttribute="leading" id="Jcs-UX-WIo"/>
+                            <constraint firstItem="ntP-DH-mw2" firstAttribute="top" secondItem="EHQ-Jo-kr9" secondAttribute="bottom" constant="15" id="Wv4-rF-Fli"/>
+                            <constraint firstAttribute="trailing" secondItem="rVe-fR-ZMK" secondAttribute="trailing" id="h34-0o-XnY"/>
+                            <constraint firstItem="31T-7W-pZy" firstAttribute="leading" secondItem="leq-Qb-1Ul" secondAttribute="leading" constant="44" id="izm-GL-IZa"/>
+                            <constraint firstItem="leq-Qb-1Ul" firstAttribute="bottom" secondItem="rVe-fR-ZMK" secondAttribute="bottom" constant="256" id="j7Y-un-BSx"/>
+                            <constraint firstItem="31T-7W-pZy" firstAttribute="leading" secondItem="NeQ-eF-9Fy" secondAttribute="leading" id="kXy-oB-6Oi"/>
+                            <constraint firstItem="EHQ-Jo-kr9" firstAttribute="top" secondItem="NeQ-eF-9Fy" secondAttribute="bottom" constant="16" id="rsu-yI-C04"/>
+                            <constraint firstItem="leq-Qb-1Ul" firstAttribute="bottom" secondItem="31T-7W-pZy" secondAttribute="bottom" constant="88" id="vc0-fw-Gr3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="leq-Qb-1Ul"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nkG-fA-w59" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1664.8" y="1366.8665667166417"/>
+        </scene>
         <!--Confirm Match View Controller-->
         <scene sceneID="Hlx-MO-jEy">
             <objects>
@@ -254,7 +312,7 @@
                                 <rect key="frame" x="53" y="231" width="86" height="30"/>
                                 <state key="normal" title="Yes, i'm sure"/>
                                 <connections>
-                                    <segue destination="R88-92-ijW" kind="show" id="ooZ-HT-Ov7"/>
+                                    <segue destination="VGP-3D-unG" kind="show" id="ikO-si-def"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAQ-LJ-cd2">
@@ -298,6 +356,10 @@
                                     <segue destination="43m-Eb-KK8" kind="show" id="eZ3-Ke-q5N"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1a4-fn-sHt">
+                                <rect key="frame" x="164" y="246" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hk8-do-pSA"/>
@@ -314,22 +376,30 @@
                     <view key="view" contentMode="scaleToFill" id="uTY-kQ-XWw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Say hi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRc-dV-O8f">
+                                <rect key="frame" x="16" y="291" width="343" height="356"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vpk-cU-Syg"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uxO-J5-10d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3284" y="239"/>
+            <point key="canvasLocation" x="3284" y="238.83058470764618"/>
         </scene>
     </scenes>
     <resources>
         <image name="DOG" width="225" height="225"/>
         <image name="dog1" width="249" height="203"/>
+        <image name="dog2" width="624" height="534"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4YG-eC-Zcv"/>
         <segue reference="yle-CG-caK"/>
-        <segue reference="ooZ-HT-Ov7"/>
     </inferredMetricsTieBreakers>
 </document>
