@@ -239,6 +239,61 @@
             <point key="canvasLocation" x="1660" y="653.52323838080963"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="SGJ-LX-qzz">
+            <objects>
+                <viewController id="dJ6-eS-gSZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Rs-Mn-vRw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="dog3" translatesAutoresizingMaskIntoConstraints="NO" id="na7-Dx-tFl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="411"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chi-chi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RB3-nR-8tE">
+                                <rect key="frame" x="28" y="455" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZx-yL-QoF">
+                                <rect key="frame" x="28" y="519" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Girl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8LQ-mL-Tki">
+                                <rect key="frame" x="28" y="548" width="27" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pomeranian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rvn-GW-dwD">
+                                <rect key="frame" x="28" y="490" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RB3-nR-8tE" firstAttribute="leading" secondItem="8LQ-mL-Tki" secondAttribute="leading" id="0xI-3B-uqW"/>
+                            <constraint firstItem="vZx-yL-QoF" firstAttribute="top" secondItem="Rvn-GW-dwD" secondAttribute="bottom" constant="8" symbolic="YES" id="1uY-0H-zR2"/>
+                            <constraint firstItem="RB3-nR-8tE" firstAttribute="leading" secondItem="vZx-yL-QoF" secondAttribute="leading" id="36Q-cU-ibC"/>
+                            <constraint firstAttribute="bottom" secondItem="RB3-nR-8tE" secondAttribute="bottom" constant="191" id="Htj-D3-uy2"/>
+                            <constraint firstItem="8LQ-mL-Tki" firstAttribute="top" secondItem="vZx-yL-QoF" secondAttribute="bottom" constant="8" symbolic="YES" id="Rnc-IJ-Zk4"/>
+                            <constraint firstItem="RB3-nR-8tE" firstAttribute="leading" secondItem="Rvn-GW-dwD" secondAttribute="leading" id="UiK-CU-eeQ"/>
+                            <constraint firstItem="RB3-nR-8tE" firstAttribute="top" secondItem="na7-Dx-tFl" secondAttribute="bottom" constant="44" id="c4s-ef-6T3"/>
+                            <constraint firstItem="RB3-nR-8tE" firstAttribute="leading" secondItem="7zl-Q7-CjQ" secondAttribute="leading" constant="28" id="iUB-kr-tBL"/>
+                            <constraint firstItem="Rvn-GW-dwD" firstAttribute="top" secondItem="RB3-nR-8tE" secondAttribute="bottom" constant="14" id="vG6-j5-eYD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7zl-Q7-CjQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="irN-E4-qGT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873" y="1367"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="Od0-5S-yRo">
             <objects>
                 <viewController id="VGP-3D-unG" sceneMemberID="viewController">
@@ -298,7 +353,11 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nkG-fA-w59" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="nuG-bK-fdV"/>
+                <swipeGestureRecognizer direction="left" id="nuG-bK-fdV">
+                    <connections>
+                        <outlet property="delegate" destination="na7-Dx-tFl" id="87L-cq-9pP"/>
+                    </connections>
+                </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="right" id="6jE-4h-dya"/>
             </objects>
             <point key="canvasLocation" x="1664.8" y="1366.8665667166417"/>
@@ -462,6 +521,7 @@
         <image name="DOG" width="225" height="225"/>
         <image name="dog1" width="249" height="203"/>
         <image name="dog2" width="624" height="534"/>
+        <image name="dog3" width="311" height="162"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="7dl-Nh-uIU"/>
