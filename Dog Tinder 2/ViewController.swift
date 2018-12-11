@@ -47,10 +47,23 @@ class ViewController: UIViewController {
             print(size)
             
         }
-        
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction)swipe:)))
+        leftSwipe.direction = UISwipeGestureRecognizerDirection.left
+        seld.view.addGestureRecognizer(leftSwipe)
 
     }
 
 
 }
-
+ extension UIViewController
+    func swipeAction(swipe:UISwipeGestureRecognizer)
+{
+    switch swipe.direction.rawValue {
+    case 1:
+        performSegue(withIdentifier: "swipeLeft", sender: self)
+    case 2:
+        performSegue(withIdentifier: "swipeRight", sender: self)
+    default:
+        break
+    }
+}

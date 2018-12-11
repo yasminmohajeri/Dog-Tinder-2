@@ -241,6 +241,7 @@
         <!--View Controller-->
         <scene sceneID="SGJ-LX-qzz">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="irN-E4-qGT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="dJ6-eS-gSZ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Rs-Mn-vRw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -297,13 +298,23 @@
                         <viewLayoutGuide key="safeArea" id="7zl-Q7-CjQ"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="irN-E4-qGT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="873" y="1367"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Od0-5S-yRo">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nkG-fA-w59" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="F7j-Fb-8Sr">
+                    <connections>
+                        <segue destination="5p7-3z-YbA" kind="show" id="cvM-30-qaB"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="aVY-LR-AvN">
+                    <connections>
+                        <segue destination="dMp-Bp-TYY" kind="show" id="07L-2C-Cg2"/>
+                    </connections>
+                </swipeGestureRecognizer>
                 <viewController id="VGP-3D-unG" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jVQ-0z-5Ax">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -313,8 +324,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="411"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="nuG-bK-fdV" appends="YES" id="6Iu-Js-U2p"/>
-                                    <outletCollection property="gestureRecognizers" destination="6jE-4h-dya" appends="YES" id="n5S-85-49d"/>
+                                    <outletCollection property="gestureRecognizers" destination="F7j-Fb-8Sr" appends="YES" id="nNE-cH-MJd"/>
+                                    <outletCollection property="gestureRecognizers" destination="aVY-LR-AvN" appends="YES" id="GL9-kV-bIm"/>
                                 </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Martin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeQ-eF-9Fy">
@@ -360,18 +371,6 @@
                         <viewLayoutGuide key="safeArea" id="leq-Qb-1Ul"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nkG-fA-w59" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="nuG-bK-fdV">
-                    <connections>
-                        <outlet property="delegate" destination="na7-Dx-tFl" id="87L-cq-9pP"/>
-                        <segue destination="5p7-3z-YbA" kind="show" id="Ods-XH-h7M"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="6jE-4h-dya">
-                    <connections>
-                        <segue destination="dMp-Bp-TYY" kind="show" id="h47-8d-mo9"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1664.8" y="1366.8665667166417"/>
         </scene>
@@ -408,6 +407,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y2p-Pm-bke" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1233" y="2121"/>
+        </scene>
+        <!--Swipe Right-->
+        <scene sceneID="aRw-DZ-2qg">
+            <objects>
+                <viewController id="4fa-05-otO" customClass="swipeRight" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PSn-XY-OCr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.30077517939999998" green="0.62977070150000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="zQQ-af-EzI"/>
+                    </view>
+                    <connections>
+                        <segue destination="XrO-Xy-uav" kind="show" identifier="goLeft" id="hxd-86-l9Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dG8-cb-cy4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2321" y="2945"/>
+        </scene>
+        <!--Swipe Left-->
+        <scene sceneID="2id-Gv-9pw">
+            <objects>
+                <viewController id="XrO-Xy-uav" customClass="swipeLeft" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hQs-fa-6kv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.58780457122562502" blue="0.28834346663350785" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="jTE-O3-NXO"/>
+                    </view>
+                    <connections>
+                        <segue destination="4fa-05-otO" kind="show" identifier="swipeLeft" id="dqr-bO-tfq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eve-gG-rAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1233" y="2945"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vLE-kq-Drk">
@@ -612,9 +647,10 @@
         <image name="dog3" width="311" height="162"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="hxd-86-l9Y"/>
         <segue reference="7dl-Nh-uIU"/>
-        <segue reference="uqM-ef-OSb"/>
-        <segue reference="HFc-gc-5f6"/>
+        <segue reference="GNP-Ms-B9U"/>
+        <segue reference="1Zf-Tu-72C"/>
         <segue reference="3yy-49-US8"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		59075A6321BFC0020022824A /* ConfirmMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59075A6221BFC0020022824A /* ConfirmMatchViewController.swift */; };
+		59075A6521BFD4700022824A /* ViewControllerSwipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59075A6421BFD4700022824A /* ViewControllerSwipe.swift */; };
 		59F04B0421B67FF000E0C5E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F04B0321B67FF000E0C5E4 /* AppDelegate.swift */; };
 		59F04B0621B67FF000E0C5E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F04B0521B67FF000E0C5E4 /* ViewController.swift */; };
 		59F04B0921B67FF000E0C5E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F04B0721B67FF000E0C5E4 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		53BA8D036D6FD9698BB43604 /* Pods-Dog Tinder 2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dog Tinder 2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dog Tinder 2/Pods-Dog Tinder 2.release.xcconfig"; sourceTree = "<group>"; };
 		59075A6221BFC0020022824A /* ConfirmMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmMatchViewController.swift; sourceTree = "<group>"; };
+		59075A6421BFD4700022824A /* ViewControllerSwipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSwipe.swift; sourceTree = "<group>"; };
 		59F04B0021B67FF000E0C5E4 /* Dog Tinder 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dog Tinder 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F04B0321B67FF000E0C5E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59F04B0521B67FF000E0C5E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				59F04B0321B67FF000E0C5E4 /* AppDelegate.swift */,
 				59F04B0521B67FF000E0C5E4 /* ViewController.swift */,
 				59F04B0721B67FF000E0C5E4 /* Main.storyboard */,
+				59075A6421BFD4700022824A /* ViewControllerSwipe.swift */,
 				59075A6221BFC0020022824A /* ConfirmMatchViewController.swift */,
 				59F04B0A21B67FF100E0C5E4 /* Assets.xcassets */,
 				59F04B0C21B67FF100E0C5E4 /* LaunchScreen.storyboard */,
@@ -255,6 +258,7 @@
 				59F04B0621B67FF000E0C5E4 /* ViewController.swift in Sources */,
 				59F04B0421B67FF000E0C5E4 /* AppDelegate.swift in Sources */,
 				59075A6321BFC0020022824A /* ConfirmMatchViewController.swift in Sources */,
+				59075A6521BFD4700022824A /* ViewControllerSwipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
