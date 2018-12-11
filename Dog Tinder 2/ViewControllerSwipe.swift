@@ -7,7 +7,23 @@
 //
 
 import Foundation
+class ViewControllerSwipe {
+class rightSwipe
+{
+class leftSwipe
 
-let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction),swipe:);))
+{
+
+    let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction),swipe:);))
 rightSwipe.direction = UISwipeGestureRecognizerDirection.right
-seld.view.addGestureRecognizer(rightSwipe)
+self.view.addGestureRecognizer(rightSwipe)
+}
+
+func didReceiveMemoryWarning() {
+super.didReceiveMemoryWarning()
+
+}
+
+}
+    
+}

@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import (self)
 
 class ViewController: UIViewController {
 
@@ -38,7 +39,7 @@ class ViewController: UIViewController {
      
         testImagesRef.putData(imageData!, metadata: metadata) { metadata, error in
             guard let metadata = metadata else {
-                print(error?.localizedDescription)
+                print(error?.localizedDescription ?? <#default value#>)
                 return
             }
             
@@ -47,7 +48,7 @@ class ViewController: UIViewController {
             print(size)
             
         }
-        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction)swipe:)))
+        _ = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction),swipe:);))
         leftSwipe.direction = UISwipeGestureRecognizerDirection.left
         seld.view.addGestureRecognizer(leftSwipe)
 
@@ -60,9 +61,9 @@ class ViewController: UIViewController {
 {
     switch swipe.direction.rawValue {
     case 1:
-        performSegue(withIdentifier: "swipeLeft", sender: self)
+        performSegue(withIdentifier: "swipeLeft",sender: self)
     case 2:
-        performSegue(withIdentifier: "swipeRight", sender: self)
+        performSegue(withIdentifier: "swipeRight",sender: self)
     default:
         break
     }
