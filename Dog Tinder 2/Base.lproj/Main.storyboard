@@ -137,6 +137,9 @@
                                 <rect key="frame" x="16" y="610" width="114" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Meet other dogs"/>
+                                <connections>
+                                    <segue destination="R88-92-ijW" kind="show" id="1Zf-Tu-72C"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -169,16 +172,164 @@
                     <view key="view" contentMode="scaleToFill" id="A5t-4V-gbl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog1" translatesAutoresizingMaskIntoConstraints="NO" id="PrX-qL-8e5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="395"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzq-jW-EmD">
+                                <rect key="frame" x="53" y="496" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQB-4A-UTS">
+                                <rect key="frame" x="53" y="525" width="29" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ax-gH-or6">
+                                <rect key="frame" x="51" y="461" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5l-hW-JXt">
+                                <rect key="frame" x="53" y="425" width="31" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="PrX-qL-8e5" secondAttribute="trailing" id="5zW-tw-1Tu"/>
+                            <constraint firstItem="0Ax-gH-or6" firstAttribute="leading" secondItem="mRf-b2-ccD" secondAttribute="leading" constant="51" id="Hxu-2m-hpx"/>
+                            <constraint firstItem="PrX-qL-8e5" firstAttribute="leading" secondItem="A5t-4V-gbl" secondAttribute="leading" id="ITi-6A-xUc"/>
+                            <constraint firstItem="A5l-hW-JXt" firstAttribute="top" secondItem="PrX-qL-8e5" secondAttribute="bottom" constant="30" id="KfK-0e-wF6"/>
+                            <constraint firstItem="MQB-4A-UTS" firstAttribute="top" secondItem="pzq-jW-EmD" secondAttribute="bottom" constant="8" symbolic="YES" id="QJZ-hn-a2u"/>
+                            <constraint firstItem="A5l-hW-JXt" firstAttribute="leading" secondItem="pzq-jW-EmD" secondAttribute="leading" id="RyK-Pj-JuE"/>
+                            <constraint firstItem="A5l-hW-JXt" firstAttribute="leading" secondItem="MQB-4A-UTS" secondAttribute="leading" id="YGG-9v-3Nu"/>
+                            <constraint firstItem="PrX-qL-8e5" firstAttribute="top" secondItem="A5t-4V-gbl" secondAttribute="top" id="d2U-D0-5Es"/>
+                            <constraint firstItem="A5l-hW-JXt" firstAttribute="leading" secondItem="mRf-b2-ccD" secondAttribute="leading" constant="53" id="fPe-dJ-B8E"/>
+                            <constraint firstItem="pzq-jW-EmD" firstAttribute="top" secondItem="0Ax-gH-or6" secondAttribute="bottom" constant="14" id="i6a-p6-Drs"/>
+                            <constraint firstItem="0Ax-gH-or6" firstAttribute="top" secondItem="A5l-hW-JXt" secondAttribute="bottom" constant="15" id="mN2-vm-CnS"/>
+                            <constraint firstItem="mRf-b2-ccD" firstAttribute="bottom" secondItem="PrX-qL-8e5" secondAttribute="bottom" constant="272" id="nT7-r8-T5n"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="mRf-b2-ccD"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="5hd-M9-QTP" appends="YES" id="DiI-0R-uRy"/>
+                            <outletCollection property="gestureRecognizers" destination="Sco-Tu-OQ5" appends="YES" id="szW-hc-zCU"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2k6-dU-M2D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="Sco-Tu-OQ5">
+                    <connections>
+                        <segue destination="9WI-LR-75b" kind="show" id="4YG-eC-Zcv"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="5hd-M9-QTP">
+                    <connections>
+                        <segue destination="H59-lU-cSt" kind="show" id="yle-CG-caK"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1660" y="654"/>
+            <point key="canvasLocation" x="1660" y="653.52323838080963"/>
+        </scene>
+        <!--Confirm Match View Controller-->
+        <scene sceneID="Hlx-MO-jEy">
+            <objects>
+                <viewController id="9WI-LR-75b" customClass="ConfirmMatchViewController" customModule="Dog_Tinder_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rW3-hW-NdH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srx-Ny-edy">
+                                <rect key="frame" x="13" y="165" width="349" height="30"/>
+                                <state key="normal" title="Are you sure you don't want to match?"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTB-qP-0J6">
+                                <rect key="frame" x="53" y="231" width="86" height="30"/>
+                                <state key="normal" title="Yes, i'm sure"/>
+                                <connections>
+                                    <segue destination="R88-92-ijW" kind="show" id="ooZ-HT-Ov7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAQ-LJ-cd2">
+                                <rect key="frame" x="205" y="231" width="135" height="30"/>
+                                <state key="normal" title="No, i'd like to match"/>
+                                <connections>
+                                    <segue destination="H59-lU-cSt" kind="show" id="7dl-Nh-uIU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kAQ-LJ-cd2" firstAttribute="leading" secondItem="oTB-qP-0J6" secondAttribute="trailing" constant="66" id="KKi-3D-Ave"/>
+                            <constraint firstItem="srx-Ny-edy" firstAttribute="top" secondItem="IuB-fC-PJK" secondAttribute="top" constant="145" id="MiP-is-1zZ"/>
+                            <constraint firstItem="oTB-qP-0J6" firstAttribute="baseline" secondItem="kAQ-LJ-cd2" secondAttribute="baseline" id="R6B-He-tgH"/>
+                            <constraint firstItem="oTB-qP-0J6" firstAttribute="top" secondItem="srx-Ny-edy" secondAttribute="bottom" constant="36" id="Vi6-G6-PdG"/>
+                            <constraint firstItem="srx-Ny-edy" firstAttribute="centerX" secondItem="rW3-hW-NdH" secondAttribute="centerX" id="gWI-gw-XGX"/>
+                            <constraint firstItem="srx-Ny-edy" firstAttribute="leading" secondItem="IuB-fC-PJK" secondAttribute="leading" constant="13" id="hPF-W0-sQL"/>
+                            <constraint firstItem="oTB-qP-0J6" firstAttribute="leading" secondItem="IuB-fC-PJK" secondAttribute="leading" constant="53" id="tK0-Md-Crn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IuB-fC-PJK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="91I-KP-tWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2413.5999999999999" y="971.96401799100454"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eig-Iq-vvw">
+            <objects>
+                <viewController id="H59-lU-cSt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UNu-id-N3q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCD-nx-Emr">
+                                <rect key="frame" x="142" y="150" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start talking?"/>
+                                <connections>
+                                    <segue destination="43m-Eb-KK8" kind="show" id="eZ3-Ke-q5N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hk8-do-pSA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Gx-mc-Ulc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2413.5999999999999" y="238.83058470764618"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zlB-X9-cg3">
+            <objects>
+                <viewController id="43m-Eb-KK8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uTY-kQ-XWw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="vpk-cU-Syg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uxO-J5-10d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3284" y="239"/>
         </scene>
     </scenes>
     <resources>
         <image name="DOG" width="225" height="225"/>
+        <image name="dog1" width="249" height="203"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="4YG-eC-Zcv"/>
+        <segue reference="yle-CG-caK"/>
+        <segue reference="ooZ-HT-Ov7"/>
+    </inferredMetricsTieBreakers>
 </document>
