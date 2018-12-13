@@ -47,8 +47,8 @@ using model::DocumentKey;
 using util::AsyncQueue;
 using util::Status;
 using util::StatusOr;
-using util::Executor;
-using util::ExecutorLibdispatch;
+using util::internal::Executor;
+using util::internal::ExecutorLibdispatch;
 
 namespace {
 

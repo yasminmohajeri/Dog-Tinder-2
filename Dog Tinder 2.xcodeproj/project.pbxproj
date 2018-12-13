@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27D61E9621C2B3880027EAD6 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D61E9521C2B3880027EAD6 /* MatchViewController.swift */; };
+		27D61E9821C2B3CC0027EAD6 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D61E9721C2B3CC0027EAD6 /* Dog.swift */; };
+		27D61E9A21C2B5270027EAD6 /* AddDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D61E9921C2B5270027EAD6 /* AddDogViewController.swift */; };
 		59075A6321BFC0020022824A /* ConfirmMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59075A6221BFC0020022824A /* ConfirmMatchViewController.swift */; };
 		59075A6521BFD4700022824A /* ViewControllerSwipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59075A6421BFD4700022824A /* ViewControllerSwipe.swift */; };
 		59F04B0421B67FF000E0C5E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F04B0321B67FF000E0C5E4 /* AppDelegate.swift */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27D61E9521C2B3880027EAD6 /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
+		27D61E9721C2B3CC0027EAD6 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		27D61E9921C2B5270027EAD6 /* AddDogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogViewController.swift; sourceTree = "<group>"; };
 		53BA8D036D6FD9698BB43604 /* Pods-Dog Tinder 2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dog Tinder 2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dog Tinder 2/Pods-Dog Tinder 2.release.xcconfig"; sourceTree = "<group>"; };
 		59075A6221BFC0020022824A /* ConfirmMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmMatchViewController.swift; sourceTree = "<group>"; };
 		59075A6421BFD4700022824A /* ViewControllerSwipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSwipe.swift; sourceTree = "<group>"; };
@@ -77,7 +83,10 @@
 			children = (
 				59F04B0321B67FF000E0C5E4 /* AppDelegate.swift */,
 				59F04B0521B67FF000E0C5E4 /* ViewController.swift */,
+				27D61E9521C2B3880027EAD6 /* MatchViewController.swift */,
+				27D61E9721C2B3CC0027EAD6 /* Dog.swift */,
 				59F04B0721B67FF000E0C5E4 /* Main.storyboard */,
+				27D61E9921C2B5270027EAD6 /* AddDogViewController.swift */,
 				59075A6421BFD4700022824A /* ViewControllerSwipe.swift */,
 				59075A6221BFC0020022824A /* ConfirmMatchViewController.swift */,
 				59F04B0A21B67FF100E0C5E4 /* Assets.xcassets */,
@@ -109,7 +118,6 @@
 				59F04AFD21B67FF000E0C5E4 /* Frameworks */,
 				59F04AFE21B67FF000E0C5E4 /* Resources */,
 				87FBB7CD6D52042CD47FAADA /* [CP] Embed Pods Frameworks */,
-				701B740813076EB9362E4640 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,28 +198,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		701B740813076EB9362E4640 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Dog Tinder 2/Pods-Dog Tinder 2-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/gRPCCertificates-Firestore.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates-Firestore.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dog Tinder 2/Pods-Dog Tinder 2-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		87FBB7CD6D52042CD47FAADA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,13 +206,16 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Dog Tinder 2/Pods-Dog Tinder 2-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Dog Tinder 2/Pods-Dog Tinder 2-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -238,14 +227,17 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dog Tinder 2/Pods-Dog Tinder 2-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dog Tinder 2/Pods-Dog Tinder 2-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -256,9 +248,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				59F04B0621B67FF000E0C5E4 /* ViewController.swift in Sources */,
+				27D61E9A21C2B5270027EAD6 /* AddDogViewController.swift in Sources */,
 				59F04B0421B67FF000E0C5E4 /* AppDelegate.swift in Sources */,
+				27D61E9821C2B3CC0027EAD6 /* Dog.swift in Sources */,
 				59075A6321BFC0020022824A /* ConfirmMatchViewController.swift in Sources */,
 				59075A6521BFD4700022824A /* ViewControllerSwipe.swift in Sources */,
+				27D61E9621C2B3880027EAD6 /* MatchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,7 +34,6 @@
 
 using firebase::firestore::auth::HashUser;
 using firebase::firestore::auth::User;
-using firebase::firestore::local::LruParams;
 using firebase::firestore::model::DocumentKey;
 using firebase::firestore::model::DocumentKeyHash;
 using firebase::firestore::model::ListenSequenceNumber;
@@ -85,13 +84,10 @@ NS_ASSUME_NONNULL_BEGIN
   return persistence;
 }
 
-+ (instancetype)persistenceWithLruParams:(firebase::firestore::local::LruParams)lruParams
-                              serializer:(FSTLocalSerializer *)serializer {
++ (instancetype)persistenceWithLRUGCAndSerializer:(FSTLocalSerializer *)serializer {
   FSTMemoryPersistence *persistence = [[FSTMemoryPersistence alloc] init];
   persistence.referenceDelegate =
-      [[FSTMemoryLRUReferenceDelegate alloc] initWithPersistence:persistence
-                                                      serializer:serializer
-                                                       lruParams:lruParams];
+      [[FSTMemoryLRUReferenceDelegate alloc] initWithPersistence:persistence serializer:serializer];
   return persistence;
 }
 
@@ -170,11 +166,11 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (instancetype)initWithPersistence:(FSTMemoryPersistence *)persistence
-                         serializer:(FSTLocalSerializer *)serializer
-                          lruParams:(firebase::firestore::local::LruParams)lruParams {
+                         serializer:(FSTLocalSerializer *)serializer {
   if (self = [super init]) {
     _persistence = persistence;
-    _gc = [[FSTLRUGarbageCollector alloc] initWithDelegate:self params:lruParams];
+    _gc =
+        [[FSTLRUGarbageCollector alloc] initWithQueryCache:[_persistence queryCache] delegate:self];
     _currentSequenceNumber = kFSTListenSequenceNumberInvalid;
     // Theoretically this is always 0, since this is all in-memory...
     ListenSequenceNumber highestSequenceNumber =
@@ -230,9 +226,7 @@ NS_ASSUME_NONNULL_BEGIN
   for (const auto &entry : _sequenceNumbers) {
     ListenSequenceNumber sequenceNumber = entry.second;
     const DocumentKey &key = entry.first;
-    // Pass in the exact sequence number as the upper bound so we know it won't be pinned by being
-    // too recent.
-    if (![self isPinnedAtSequenceNumber:sequenceNumber document:key]) {
+    if (![_persistence.queryCache containsKey:key]) {
       block(key, sequenceNumber, &stop);
     }
   }
@@ -242,15 +236,6 @@ NS_ASSUME_NONNULL_BEGIN
                               liveQueries:(NSDictionary<NSNumber *, FSTQueryData *> *)liveQueries {
   return [_persistence.queryCache removeQueriesThroughSequenceNumber:sequenceNumber
                                                          liveQueries:liveQueries];
-}
-
-- (int32_t)sequenceNumberCount {
-  __block int32_t totalCount = [_persistence.queryCache count];
-  [self enumerateMutationsUsingBlock:^(const DocumentKey &key, ListenSequenceNumber sequenceNumber,
-                                       BOOL *stop) {
-    totalCount++;
-  }];
-  return totalCount;
 }
 
 - (int)removeOrphanedDocumentsThroughSequenceNumber:(ListenSequenceNumber)upperBound {

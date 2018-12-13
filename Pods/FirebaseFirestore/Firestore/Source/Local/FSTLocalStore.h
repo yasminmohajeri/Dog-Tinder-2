@@ -16,7 +16,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import "Firestore/Source/Local/FSTLRUGarbageCollector.h"
 #import "Firestore/Source/Model/FSTDocumentDictionary.h"
 
 #include "Firestore/core/src/firebase/firestore/auth/user.h"
@@ -176,8 +175,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (nullable FSTMutationBatch *)nextMutationBatchAfterBatchID:
     (firebase::firestore::model::BatchId)batchID;
-
-- (firebase::firestore::local::LruResults)collectGarbage:(FSTLRUGarbageCollector *)garbageCollector;
 
 @end
 

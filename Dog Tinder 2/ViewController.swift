@@ -8,7 +8,6 @@
 
 import UIKit
 import Firebase
-import (self)
 
 class ViewController: UIViewController {
 
@@ -37,34 +36,34 @@ class ViewController: UIViewController {
         let imageData = image.jpegData(compressionQuality: 0)
         
      
-        testImagesRef.putData(imageData!, metadata: metadata) { metadata, error in
-            guard let metadata = metadata else {
-                print(error?.localizedDescription ?? <#default value#>)
-                return
-            }
-            
-            let size = metadata.size
-            // You can also access to download URL after upload.
-            print(size)
-            
-        }
-        _ = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction),swipe:);))
-        leftSwipe.direction = UISwipeGestureRecognizerDirection.left
-        seld.view.addGestureRecognizer(leftSwipe)
+//        testImagesRef.putData(imageData!, metadata: metadata) { metadata, error in
+//            guard let metadata = metadata else {
+//                print(error?.localizedDescription ?? )
+//                return
+//            }
+//            
+//            let size = metadata.size
+//            // You can also access to download URL after upload.
+//            print(size)
+//            
+//        }
+//        _ = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction),swipe:);))
+//        leftSwipe.direction = UISwipeGestureRecognizerDirection.left
+//        seld.view.addGestureRecognizer(leftSwipe)
 
     }
 
 
 }
- extension UIViewController
-    func swipeAction(swipe:UISwipeGestureRecognizer)
-{
-    switch swipe.direction.rawValue {
-    case 1:
-        performSegue(withIdentifier: "swipeLeft",sender: self)
-    case 2:
-        performSegue(withIdentifier: "swipeRight",sender: self)
-    default:
-        break
-    }
-}
+// extension UIViewController
+//    func swipeAction(swipe:UISwipeGestureRecognizer)
+//{
+//    switch swipe.direction.rawValue {
+//    case 1:
+//        performSegue(withIdentifier: "swipeLeft",sender: self)
+//    case 2:
+//        performSegue(withIdentifier: "swipeRight",sender: self)
+//    default:
+//        break
+//    }
+//}
