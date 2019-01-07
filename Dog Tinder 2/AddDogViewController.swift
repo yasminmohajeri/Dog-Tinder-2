@@ -33,8 +33,12 @@ class AddDogViewController: UIViewController {
 
   }
   
-  
-  func upload(image: UIImage, uid: String, compleation: @escaping () -> ()) {
+  // Information ViewController
+    @IBAction func Info(_ sender: Any) {
+    }
+    
+    
+    func upload(image: UIImage, uid: String, compleation: @escaping () -> ()) {
     // Create a root reference
     let storageRef = Storage.storage().reference()
     
