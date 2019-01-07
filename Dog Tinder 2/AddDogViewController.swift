@@ -36,7 +36,9 @@ class AddDogViewController: UIViewController {
   // Information ViewController
     @IBAction func Info(_ sender: Any) {
     }
-    
+ // Save Button 
+    @IBAction func Savebutton(_ sender: Any) {
+    }
     
     func upload(image: UIImage, uid: String, compleation: @escaping () -> ()) {
     // Create a root reference

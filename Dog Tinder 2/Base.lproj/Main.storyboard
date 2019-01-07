@@ -159,6 +159,9 @@
                                 <rect key="frame" x="162" y="628" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="Savebutton:" destination="yUf-lb-zJI" eventType="touchUpInside" id="Ibe-we-X7W"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eOr-qN-ggK">
                                 <rect key="frame" x="16" y="476" width="78" height="30"/>
