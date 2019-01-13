@@ -13,6 +13,7 @@
 		59075A6321BFC0020022824A /* ConfirmMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59075A6221BFC0020022824A /* ConfirmMatchViewController.swift */; };
 		59075A6521BFD4700022824A /* ViewControllerSwipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59075A6421BFD4700022824A /* ViewControllerSwipe.swift */; };
 		59405F6B21E4B5660075C6AB /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59405F6A21E4B5660075C6AB /* AppManager.swift */; };
+		596A88D721EB94FB006605B1 /* swipeGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596A88D621EB94FB006605B1 /* swipeGesture.swift */; };
 		59F04B0421B67FF000E0C5E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F04B0321B67FF000E0C5E4 /* AppDelegate.swift */; };
 		59F04B0621B67FF000E0C5E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F04B0521B67FF000E0C5E4 /* ViewController.swift */; };
 		59F04B0921B67FF000E0C5E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F04B0721B67FF000E0C5E4 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		59075A6221BFC0020022824A /* ConfirmMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmMatchViewController.swift; sourceTree = "<group>"; };
 		59075A6421BFD4700022824A /* ViewControllerSwipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSwipe.swift; sourceTree = "<group>"; };
 		59405F6A21E4B5660075C6AB /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		596A88D621EB94FB006605B1 /* swipeGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swipeGesture.swift; sourceTree = "<group>"; };
 		59F04B0021B67FF000E0C5E4 /* Dog Tinder 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dog Tinder 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F04B0321B67FF000E0C5E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59F04B0521B67FF000E0C5E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				8A6A0DDA21E3969D0071AC71 /* AppContainerViewController.swift */,
 				59405F6A21E4B5660075C6AB /* AppManager.swift */,
 				8A6A0DDE21E39A220071AC71 /* SignUpViewController.swift */,
+				596A88D621EB94FB006605B1 /* swipeGesture.swift */,
 				27D61E9921C2B5270027EAD6 /* AddDogViewController.swift */,
 				59075A6421BFD4700022824A /* ViewControllerSwipe.swift */,
 				59075A6221BFC0020022824A /* ConfirmMatchViewController.swift */,
@@ -258,6 +261,7 @@
 			files = (
 				59F04B0621B67FF000E0C5E4 /* ViewController.swift in Sources */,
 				59405F6B21E4B5660075C6AB /* AppManager.swift in Sources */,
+				596A88D721EB94FB006605B1 /* swipeGesture.swift in Sources */,
 				27D61E9A21C2B5270027EAD6 /* AddDogViewController.swift in Sources */,
 				59F04B0421B67FF000E0C5E4 /* AppDelegate.swift in Sources */,
 				27D61E9821C2B3CC0027EAD6 /* Dog.swift in Sources */,
